@@ -6,6 +6,30 @@
 
 
 .banner-slider{height: 100vh;}
-.banner-slider .item{height: 100vh; background-size: cover !important;}
+.banner-slider .item{height: 100vh; background-size: cover !important; overflow: hidden;}
+
+.banner-slider .item .info.mr-auto{position: relative; left: -100%; opacity: 0;}
+.banner-slider .item .info.ml-auto{position: relative; right: -100%; opacity: 0;}
+
 .banner-slider .item h2{font-family: 'Lilita One', sans-serif; font-size: 100px; font-weight: 800;}
+
 .banner-slider .item h3{font-family: 'Lilita One', sans-serif; font-size: 30px; font-weight: 800;}
+
+
+.banner-slider .swiper-slide-active .info.mr-auto{left: 0px; opacity: 1;}
+.banner-slider .swiper-slide-active .info.ml-auto{right: 0px; opacity: 1;}
+
+.swiper-button-next{right: 3% !important; position: absolute; top: 45%; z-index: 100; display: flex;
+align-items: center; justify-content: center; width: 45px !important; height: 45px !important;
+background: #fff; border-radius: 100%; font-family: FontAwesome !important;
+font-weight: bold; box-shadow: 0 1px 3px rgb(0, 0, 0 / 12%) 0 1px 2px rgb(0, 0, 0 / 24%) !important;}
+
+.swiper-button-prev{left: 3% !important; position: absolute; top: 45%; z-index: 100; display: flex;
+    align-items: center; justify-content: center; width: 45px !important; height: 45px !important;
+    background: #fff; border-radius: 100%; font-family: FontAwesome !important;
+    font-weight: bold; box-shadow: 0 1px 3px rgb(0, 0, 0 / 12%) 0 1px 2px rgb(0, 0, 0 / 24%) !important;}
+
+.swiper-button-prev:after, .swiper-button-next:after{ font-size: 17px !important; opacity: 0.8; color: #000 !important;}    
+
+.swiper-button-prev:hover, .swiper-button-next:hover {background: #e7e7e7 !important;}
+.banner-slider .swiper-pagination-bullet-active{background-color: #fff;}
