@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-y{
+    color: #f7be27 !important;
+}
 
 .container{
     max-width: 1480px !important;
@@ -102,6 +111,10 @@
     background-color: #fff;
 }
 
+header.scroll{
+    background: #000;
+}
+
 header .logo{
     width: 100px;
 }
@@ -109,4 +122,41 @@ header .logo{
 header .logo img{
     width: 100% !important;
     height: auto !important;
+}
+
+header .nav ul li a{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+header .nav ul li a:hover{
+    text-decoration: none;
+    color: #f7be27;
+}
+
+header .number{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+header .number svg{
+    font-size: 30px;
+}
+
+header .cartTab svg{
+    font-size: 35px;
+    color: #fff;
+}
+
+header .cartTab span{
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    z-index: 100;
+    width: 20px;
+    height: 20px;
+    background: #e3000e;
+    color: #fff;
 }

@@ -6,9 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 
 // import required modules
-import { Navigation, Autoplay, Pagination } from 'swiper/modules';
+import { Navigation, Autoplay, Pagination, EffectFade } from 'swiper/modules';
 
 
 const BannerSlider = () => {
@@ -24,7 +25,8 @@ const BannerSlider = () => {
         delay: 2500,
         disableOnInteraction: false,
        }}
-       modules={[Navigation,Autoplay, Pagination]} 
+       effect={'fade'}
+       modules={[Navigation,Autoplay, Pagination, EffectFade]} 
       className="banner-slider w-[100%]">
         <SwiperSlide>
             <div className="item w-[100%] relative flex items-center pl-[100px]" style={{background: `url(/slide8.jpg)`}}>
@@ -51,7 +53,7 @@ const BannerSlider = () => {
             <div className="item w-[100%] relative flex items-center pl-[100px]" style={{background: `url(/e.jpg)`}}>
                 <div className="info w-[50%] d-flex flex-col gap-4 mr-auto duration-1000">
                     <h2 className="text-white">CRISPY CHICKEN</h2>
-                    <h3><span className="text-white">Open Daily:</span><span className="text-yellow-500"> 11:30PM - 8:30PM</span></h3>
+                    <h3><span className="text-white">Order Now :</span><span className="text-yellow-500"> +261 33 456 78</span></h3>
                 </div>
             </div>
         </SwiperSlide>
