@@ -5,6 +5,7 @@ import Link from 'next/link'
 import React, { useEffect, useRef } from 'react'
 import { MdOutlinePhone } from 'react-icons/md'
 import { LiaShoppingBagSolid } from 'react-icons/lia'
+import Button from '@mui/material/Button'
 
 function Header() {
 
@@ -49,11 +50,13 @@ function Header() {
                     </li>
                   </ul>
                 </nav>
-                    <span className='text-y number flex items-center'><MdOutlinePhone className='text-y'/>+261 33 456 78</span>
+                    <span className='text-y number flex items-center'><MdOutlinePhone className='text-y'/>038 33 456 78</span>
 
                     <Link href="/cart" className='relative cartTab'><LiaShoppingBagSolid/>
                     <span className='flex items-center justify-center rounded-full'>0</span></Link>
 
+
+                      <Button className='btn-white rounded-full ml-2'>Sign In</Button>
               </div>
 
         </div>
