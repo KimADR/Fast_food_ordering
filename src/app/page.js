@@ -5,6 +5,9 @@ import ProductItemV2 from "@/components/Product_item_V2";
 import { Button } from "@mui/material";
 import Image from "next/image";
 import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Navigation } from 'swiper/modules';
 
 export default function Home() {
 
@@ -141,28 +144,114 @@ export default function Home() {
             <p className="text-center mt-3">Our journey began with a vision to create a unique dining experience that 
               combines <br/>the art of culinary craftsmanship with the warmth of family hospitality.</p>
 
-            <div className="productsList grid grid-cols-4 gap-5 mt-4">
-              <ProductItemV2 />
-              <ProductItemV2 />
-              <ProductItemV2 />
-              <ProductItemV2 />
+            <Swiper 
+                  navigation={true}
+                  slidesPerView={5}
+                  spaceBetween={10}
+                  loop={true}
+                  modules={[Navigation]} 
+                  className="productList mt-4 swiperSlider">
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide> 
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide> 
+              </Swiper>
               </div>
-
-        </div>
       </section>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <div className="bg_row"></div>
+
+      <section className="py-5">
+        <div className="container">
+            <h1 className="text-center hd text-red">OUR CRAZY DESSERTS</h1>
+            <p className="text-center mt-3">Our journey began with a vision to create a unique dining experience that 
+              combines <br/>the art of culinary craftsmanship with the warmth of family hospitality.</p>
+
+            <Swiper 
+                  navigation={true}
+                  slidesPerView={5}
+                  spaceBetween={10}
+                  loop={true}
+                  modules={[Navigation]} 
+                  className="productList mt-4 swiperSlider">
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide> 
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                      <ProductItemV2 />
+                  </SwiperSlide> 
+              </Swiper>
+              </div>
+      </section>
+
+      <section className="section deliverySection w-[100%] flex items-center justify-center">
+        <div className="container text-center">
+          <div className="w-75 m-auto">
+            <h4 className="text-brown">WE GUARANTEE</h4>
+            <h2 className="text-brown">30 MINUTES DELIVERY!</h2>
+            <p className="text-black ">
+              We are committed to delivering your order.
+              If we fail to do so, you will receive a complimentary meal on your next order.
+            </p>
+
+            <br/>
+
+            <Button className="btn-brown btn-lg no-radius">
+              CALL: 038-33-456-78
+            </Button>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

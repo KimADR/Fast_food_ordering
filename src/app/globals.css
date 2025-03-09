@@ -386,5 +386,62 @@ header .btn-border{
     bottom: 20px;
 }
 
+.swiperSlider:hover .swiper-button-next, .swiperSlider:hover .swiper-button-prev{
+    opacity: 1 !important;
+}
+
+.bg_row{
+    background-image: url("../../public/w.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    background-size: cover !important;
+}
+
+.deliverySection{
+    background: url("../../public/v.jpg") no-repeat;
+    background-size: cover !important;
+    height: 600px;
+    padding: 80px 0px;
+}
+
+.deliverySection h4{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.deliverySection h2{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+footer{
+    padding: 50px 0px;
+}
+
+footer ul li{
+    margin: 0px 15px;
+}
+
+footer ul li a{
+    color: #000;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+footer ul li a:hover{
+    text-decoration: none;
+}
+
+footer ul li a svg{
+    font-size: 25px;
+}
+
+footer ul li a:hover{
+    color: #f7be27;
+}
+
+
 
 

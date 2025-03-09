@@ -17,7 +17,7 @@ const ProductItemV1 = () => {
         {...label}
         icon={<FavoriteBorder />}
         checkedIcon={<Favorite />}
-        className='whishlist absolute top-[5px] right-[5px] z-[99]'
+        className='wishlist absolute top-[5px] right-[5px] z-[99]'
       />
         <Image src='/img1.jpeg' 
         width={"100"} 
